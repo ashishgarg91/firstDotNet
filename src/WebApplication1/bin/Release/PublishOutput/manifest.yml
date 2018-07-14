@@ -1,0 +1,8 @@
+---
+applications:
+- name: 2390
+  memory: 1G
+  stack: windows2012R2
+  health-check-type: none
+  command: cmd /c .\WebApplication1.exe --server.urls http://*:%PORT%
+  buildpack: binary_buildpack
